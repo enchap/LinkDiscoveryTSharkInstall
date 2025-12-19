@@ -9,5 +9,5 @@ irm https://raw.githubusercontent.com/enchap/LinkDiscoveryTSharkInstall/refs/hea
 ### Shortened link
 Link shortened using: [Kutt](https://kutt.it/)
 ```ruby
-irm  kutt.it/LDTShark | iex
+irm  https://kutt.it/LDTShark | iex
 ```
