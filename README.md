@@ -8,7 +8,7 @@ Scans provided:
 
 ## Powershell Execute
 ```ruby
-irm https://raw.githubusercontent.com/enchap/LinkDiscoveryTSharkInstall/refs/heads/main/LDTShark%2BInstall.ps1 | iex
+irm https://raw.githubusercontent.com/enchap/LinkDiscoveryTSharkInstall/refs/heads/main/LDTShark.ps1 | iex
 ```
 
 ### Shortened link
