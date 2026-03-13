@@ -29,7 +29,7 @@ if (!$global:tsharkBinary) {
     Write-Host " Initiating automatic download and installation..." -ForegroundColor Yellow
     Write-Host "=================================================="
 
-    $wsURL = "https://2.na.dl.wireshark.org/win64/Wireshark-4.6.2-x64.exe"
+    $wsURL = "https://2.na.dl.wireshark.org/win64/Wireshark-latest-x64.exe"
     $npcapURL = "https://npcap.com/dist/npcap-1.85.exe"
     $wsInstallerPath = "$env:TEMP\Wireshark-Installer.exe"
     $npcapInstallerPath = "$env:TEMP\Npcap-Installer.exe"
@@ -41,7 +41,7 @@ if (!$global:tsharkBinary) {
         Invoke-WebRequest -Uri $wsURL -OutFile $wsInstallerPath -ErrorAction Stop
     }
     catch {
-        Write-Error "Download failed. Check internet connection."
+        Write-Host "Download failed. Check internet connection or verify Npcap & Wireshark links still exist.`n$npcapURL `n$wsURL" -ForegroundColor Red
         Start-Sleep -Seconds 5
         Exit
     }
